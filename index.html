@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frames Example</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 50% 50%;
+    }
+    .frame {
+      border: 4px solid blue;
+      display: flex;
+      flex-direction: column; /* Added to stack content vertically */
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center; /* Added to center align text */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="frame">
+      <h2>Frame 1</h2>
+      <p>Contents of Frame 1</p>
+    </div>
+    <div class="frame">
+      <h2>Frame 3</h2>
+      <p>Contents of Frame 3</p>
+    </div>
+    <div class="frame">
+      <h2>Frame 4</h2>
+      <p>Contents of Frame 4</p>
+    </div>
+    <div class="frame">
+      <h2>Frame 2</h2>
+      <p>Contents of Frame 2</p>
+    </div>
+  </div>
+</body>
+</html>
